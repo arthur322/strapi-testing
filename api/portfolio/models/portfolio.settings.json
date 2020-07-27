@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "portfolios",
+  "info": {
+    "name": "portfolio"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.social-links"
+    },
+    "title": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "buttonLink": {
+      "type": "string"
+    }
+  }
+}
