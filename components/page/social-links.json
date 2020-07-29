@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "type": {
+    "social": {
       "type": "enumeration",
       "enum": [
         "Github",
